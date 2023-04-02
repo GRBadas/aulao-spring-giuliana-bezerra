@@ -1,5 +1,9 @@
 package com.badas.springboot.repository;
 
-public interface DisciplinaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.badas.springboot.model.Disciplina;
+
+public interface DisciplinaRepository extends JpaRepository<Disciplina, Long>{
 
 }

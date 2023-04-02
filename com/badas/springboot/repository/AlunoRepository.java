@@ -1,5 +1,9 @@
 package com.badas.springboot.repository;
 
-public interface AlunoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.badas.springboot.model.Aluno;
+
+public interface AlunoRepository extends JpaRepository<Aluno, Long>{
 
 }
