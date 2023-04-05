@@ -47,6 +47,7 @@ public class AlunoController {
 	
 	public void deleteAluno(@PathVariable Long id) {
 		Aluno aluno = alunoRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Aluno não encontrado" + id));
+		
 		alunoRepository.delete(aluno);
 	}
 
